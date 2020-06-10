@@ -6,6 +6,9 @@
 - Kolom b di definisikan sebagai VARCHAR yang sanggup menampung maksimal 10 karakter. Jika kolom ini tidak diisi, string ‘merdeka’ akan menjadi string default. Kolom b juga tidak bisa diisi nilai NULL.
 - Tabel latihan_1 menggunakan storage engine MyISAM serta charset ascii. Nomor urut auto increment dimulai dari 100.
 - Silahkan buat tabel latihan_1 dengan spesifikasi diatas sebelum lanjut ke nomor 2.
+```mysql
+CREATE TABLE latihan_1 (a INT UNSIGNED PRIMARY KEY AUTO_INCREMENT, b VARCHAR(10) DEFAULT 'merdeka' NOT NULL) AUTO_INCREMENT=100 ENGINE=MyISAM CHARACTER SET ascii;
+```
 
 ### 2. Ubah storage engine tabel latihan_1 menjadi InnoDB.
 ### 3. Ubah nama kolom b menjadi c dari tabel latihan_1, dimana kolom c ini juga memiliki tipe data yang sama dengan kolom b (termasuk atribut).
